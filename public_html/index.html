@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="en">
     <head>
-        <title>Bootstrap Example</title>
+        <title>JPDB Example</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"
@@ -18,7 +13,7 @@ and open the template in the editor.
     </head>
     <body>
         <div class="container">
-            <h2>Vertical (basic) form</h2>
+            <h2>Employee Entry Form</h2>
             <form id="empForm" method="post">
                 <div class="form-group">
                     <span><label for="empId">Employee ID:</label> <label id="empIdMsg">
@@ -113,12 +108,10 @@ and open the template in the editor.
                 }
                 var putReqStr = createPUTRequest("90935609|-31948840133201844|90933315",
                         jsonStr, "Employee", "EMP-REL");
-                alert(putReqStr);
+                
                 jQuery.ajaxSetup({async: false});
                 var resultObj = executeCommand(putReqStr, "http://api.login2explore.com:5577", "/api/iml");
                 jQuery.ajaxSetup({async: true});
-
-                alert(JSON.stringify(resultObj));
 
                 resetForm();
             }
