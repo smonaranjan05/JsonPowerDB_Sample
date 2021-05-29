@@ -53,6 +53,8 @@
     *6.JsonPowerDB in web pages:*</br>
           An illustrative example of a web form that takes user input, validate and then saves data in JPDB.</br> 
          ![image](https://user-images.githubusercontent.com/85019469/120076842-409c2f80-c0c5-11eb-83fe-d8136c7b659c.png)
+## Sources </br>
+   [JPDB API Command Reference](http://login2explore.com/jpdb/docs.html)
 
 
 
